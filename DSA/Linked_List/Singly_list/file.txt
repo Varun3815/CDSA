@@ -1,0 +1,29 @@
+###################### delete the 1st node #################
+1st node act as current node/ header node 
+head is removed from linked list it can be done in 2 steps
+
+create a temp node which will point to the same node as that of head
+
+now move the head node pointer to the next node and dispose the temp node
+
+after addition of temp node head pointer points to the second node
+
+then the 1st node is deleted
+
+after deletion of 1st node 2nd node pointing to head is the first node of linked list
+
+################# deletion of lst node #############
+
+in thios case last node is removed it can done in three steps
+
+traverse the list and whuile traversing maintain the previous node address by the time we reach the end of list  we will have 2 pointer and other pointing to node before tail node
+
+after deletion of tail node the current pointer is pointed to previous node and prev node points to previous pointer
+
+############### delete any node #################
+in this case node is to be removed and is always located b/w 2 nodes head and tail links are not updated in this case it can be done in 2 steps
+
+as similar to previous case maintain previous node's next pointer while traversing the list once we found the node to be deleted change the previous node's next pointer to next pointer to be deleted 
+
+suppose we want to delete node 2 we have to connect node 1 to node 3
+
